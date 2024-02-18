@@ -199,8 +199,55 @@ Kind of like [repoman](#repository-manager), but for managing vscode profiles an
 - CLI and Extension: Create new profile and assign in vscode
 - Extension: Bring this option to base setting (user, base profile / workspace file)
 - Stow like adopt and update strategy. Windows users are human too, guys.
-  - If on Windows
+  - If on Windows probably just diff, compare & update via CLI/extension.
   - If on linux, manage it via GNU Stow or manually (see windows)
+
+[Go back to the project list][back-to-list]
+
+### Terraria Resource Pack Sorter
+
+Terraria has Resource Packs that has music or texture or text changes since 1.4.
+However, after each update the previous version's order of the resource packs are lost.
+This client will be:
+
+- Help categorizing and sorting your resource packs
+- Have a different format/file for this sorting, so you can just re-apply it after a new update (though, i think the file format does not change, it may be easier to add metadata + order into the same file)
+- If you are ordering an older list and changed your resource pack subscriptions (will require steam id or steam login), it will show the not added ones so you can easily add them to the end of their respective categories with ease.
+- Also since this is a web based editor, you can easily share your config with your friends without installing anything shady!
+
+### Mubert Play Clients
+
+[Mubert](https://mubert.com) is an "AI" that produces music. There are many resources covering how it works if you are interested in it.
+
+I want it to work like the Mubert Play app in the app stores. -- Well, if they don't do it first, haha, why not?
+
+I want to make small clients that connect to Mubert, let you choose your genre like in the app, and play, even when you close to tray.
+If you want to interact with the stream (liking, resetting, etc.) you can use the tray icon's context menu or the app's interface.
+
+After the MVP, i want it to have media player standards like [MPRIS](https://wiki.archlinux.org/title/MPRIS) built in.
+
+### Simple Turn-based Game Framework
+
+For board games, like uno or pishti. I may build on it to make more things.
+
+TODO: Will fill this in later on, need to find more notes.
+
+---
+
+May have text based templates and builder clients.
+May introduce a platform for creating and sharing the games you made.
+Absolutely free as in free beer, so if you want to monetize it, you can do that.
+
+### Offline YOK Atlas
+
+For Turkish students. I'm sorry, rest of the world.
+
+Basically, will intrepret a list of rows from an excel file, the user will give hints for the file (the file is human readable, so we need human help to build filters and convert to machine readable stuff.)
+
+After that, build machine readable stuff (maybe sqlite) to publish/serve.
+
+It can help the simple questions of "What branches I can reasonably apply in X city" of many Turkish students & consulting teachers.
+Of course, the paid alternatives, like [ÇİTA](https://tercihalani.com/), might be better, but hey this is what you get for absolutely free.
 
 [Go back to the project list][back-to-list]
 
