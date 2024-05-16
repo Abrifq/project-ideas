@@ -254,3 +254,29 @@ Of course, the paid alternatives, like [ÇİTA](https://tercihalani.com/), might
 [back-to-list]: #projects
 [bikeshed]: https://www.bikeshed.com/ "More info on bike-shedding"
 [support-me]: https://github.com/sponsors/Abrifq "My Github Sponsors page"
+
+### Self-Hosted quick chat
+
+Probably gonna use [Urban Upload](#urban-upload) as a transport layer for files, some kind of server (maybe cloudflare WebRTC) for P2P connection for file sharing/calls. <!-- needs more research -->
+
+<!--
+## move this to project-notes:
+Share customer chat links
+Get notified on someone joining a room (With)
+File sharing over P2P or "Direct transfer" (aka upload and download) mode for "unsuitable webrtc/js scenarios" like tor
+chat over webrtc with server fallback (maybe in a HTTP3 way??)
+aaaaaaaaaaaaaaaaa
+-->
+
+### Sudoku Tutoring Website
+
+A website that has a step-by-step solver for a sudoku puzzle and an "explainer" for explaining the reason that it decided on that move in a **humanly** way.
+
+This project will also make and use a new project to ingest some sudoku solving I do, ingest that footage with given criteria and turn it into markdown files I can commentate. That way I can make a more common response for a collection of reasons.
+
+Ingestion Algo:
+
+1. Copy video to raw folder
+2. Crop the video with `ffmpeg` to desired size, save the result to cropped.
+3. Check with a C program to see where the frames differ, generate images of that frame, and at last, name and save the frame.
+4. Once the frames are saved, generate a markdown file with a template that awaits a human to fill the reason of a move :slightly_smiling_face:
